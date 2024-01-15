@@ -11,7 +11,7 @@ export default async function Table(){
     const teams = data.data
     const abbreviations = teams.map(team => team.abbreviation)
     
-    console.log(abbreviations)
+    // console.log(abbreviations)
 
     return (
         <table className="table-auto">

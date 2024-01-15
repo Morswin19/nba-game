@@ -7,7 +7,7 @@ export default function Cell({team, opp}){
 
     return (
         <td onClick={() => changeActivePair(team, opp)} className="border-blue-600 border-2 border-solid text-xs text-center min-w-20 cursor-pointer">
-            <p>{opp} & {team}</p>
+            {opp === team ? <p>{team}</p> : <p>{opp} & {team}</p>}
         </td>
     )
 }
